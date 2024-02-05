@@ -1,118 +1,62 @@
-/**
- * Sample React Native App
- * https://github.com/facebook/react-native
- *
- * @format
- */
-
+import CustomButton from '@SharedComponents/CustomButton';
+import CustomText from '@SharedComponents/CustomText';
+import store from '@Store/store';
+import {btnTextColor} from '@assets/colors';
+import {ArrowRightLong} from '@assets/icons';
 import React from 'react';
-import type {PropsWithChildren} from 'react';
-import {
-  SafeAreaView,
-  ScrollView,
-  StatusBar,
-  StyleSheet,
-  Text,
-  useColorScheme,
-  View,
-} from 'react-native';
+import {SafeAreaView, StatusBar, Text, View} from 'react-native';
 
-import {
-  Colors,
-  DebugInstructions,
-  Header,
-  LearnMoreLinks,
-  ReloadInstructions,
-} from 'react-native/Libraries/NewAppScreen';
+import {Provider} from 'react-redux';
 
-type SectionProps = PropsWithChildren<{
-  title: string;
-}>;
-
-function Section({children, title}: SectionProps): React.JSX.Element {
-  const isDarkMode = useColorScheme() === 'dark';
+const App = (): React.JSX.Element => {
   return (
-    <View style={styles.sectionContainer}>
-      <Text
-        style={[
-          styles.sectionTitle,
-          {
-            color: isDarkMode ? Colors.white : Colors.black,
-          },
-        ]}>
-        {title}
-      </Text>
-      <Text
-        style={[
-          styles.sectionDescription,
-          {
-            color: isDarkMode ? Colors.light : Colors.dark,
-          },
-        ]}>
-        {children}
-      </Text>
-    </View>
-  );
-}
-
-function App(): React.JSX.Element {
-  const isDarkMode = useColorScheme() === 'dark';
-
-  const backgroundStyle = {
-    backgroundColor: isDarkMode ? Colors.darker : Colors.lighter,
-  };
-
-  return (
-    <SafeAreaView style={backgroundStyle}>
-      <StatusBar
-        barStyle={isDarkMode ? 'light-content' : 'dark-content'}
-        backgroundColor={backgroundStyle.backgroundColor}
-      />
-      <ScrollView
-        contentInsetAdjustmentBehavior="automatic"
-        style={backgroundStyle}>
-        <Header />
-        <View
-          style={{
-            backgroundColor: isDarkMode ? Colors.black : Colors.white,
-          }}>
-          <Section title="Step One">
-            Edit <Text style={styles.highlight}>App.tsx</Text> to change this
-            screen and then come back to see your edits.
-          </Section>
-          <Section title="See Your Changes">
-            <ReloadInstructions />
-          </Section>
-          <Section title="Debug">
-            <DebugInstructions />
-          </Section>
-          <Section title="Learn More">
-            Read the docs to discover what to do next:
-          </Section>
-          <LearnMoreLinks />
+    <SafeAreaView style={{flex: 1}}>
+      <StatusBar backgroundColor={'white'} barStyle="dark-content" />
+      <Provider store={store}>
+        <View style={{padding: 10}}>
+          <CustomText text="hello" type="body1b" />
+          <CustomText text="hello" type="body1" />
+          <CustomText text="hello" type="body2b" />
+          <CustomText text="hello" type="body2" />
+          <CustomText text="hello" type="body3" />
+          <CustomText text="hello" type="body3b" />
+          <CustomText text="hello" type="body1b" />
+          <CustomText text="hello" type="head1" />
+          <CustomButton
+            text="Let's start"
+            size="regular"
+            onPress={() => {}}
+            type="primary"
+            Icon={<ArrowRightLong stroke={btnTextColor['primary']} />}
+          />
+          <CustomButton
+            text="Let's start"
+            size="regular"
+            onPress={() => {}}
+            type="primary"
+          />
+          <CustomButton
+            text="Let's start"
+            size="small"
+            onPress={() => {}}
+            type="primary"
+          />
+          <CustomButton
+            text="Let's start"
+            size="small"
+            onPress={() => {}}
+            type="primaryInactive"
+          />
+          <CustomButton
+            text="Let's start"
+            size="small"
+            onPress={() => {}}
+            type="secondaryInactive"
+          />
         </View>
-      </ScrollView>
+      </Provider>
     </SafeAreaView>
   );
-}
-
-const styles = StyleSheet.create({
-  sectionContainer: {
-    marginTop: 32,
-    paddingHorizontal: 24,
-  },
-  sectionTitle: {
-    fontSize: 24,
-    fontWeight: '600',
-  },
-  sectionDescription: {
-    marginTop: 8,
-    fontSize: 18,
-    fontWeight: '400',
-  },
-  highlight: {
-    fontWeight: '700',
-  },
-});
+};
 
 export default App;

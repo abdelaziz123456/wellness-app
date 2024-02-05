@@ -1,3 +1,17 @@
 {
-  "extends": "@react-native/typescript-config/tsconfig.json"
+  "extends": "@react-native/typescript-config/tsconfig.json",
+  "compilerOptions": {
+    "skipLibCheck": true,
+    "baseUrl": ".",
+    "paths": {
+      //"*": ["src/*"],
+      "@common/*": ["./src/common/*"],
+      "@SharedComponents/*": ["./src/SharedComponents/*"],
+      "@Components/*": ["./src/Components/*"],
+      "@Screens/*": ["./src/Screens/*"],
+      "@Utiles/*": ["./src/Utiles/*"],
+      "@Store/*": ["./src/Store/*"],
+      "@assets/*": ["./src/assets/*"]
+    }
+  }
 }
