@@ -1,3 +1,5 @@
+import {KeyboardTypeOptions} from 'react-native';
+
 export type textTypes =
   | 'head1'
   | 'head2'
@@ -30,4 +32,18 @@ export type ButtonProps = {
   type: ButtonTypes;
   size: 'regular' | 'small';
   Icon?: React.ReactElement;
+};
+
+export type InputFieldProps = {
+  leftIcon: JSX.Element;
+  placeHolder?: string;
+  label?: string;
+  errorMessage?: string;
+  state?: 'success' | 'error' | 'disabled';
+  keyboardType?: KeyboardTypeOptions;
+};
+
+export type CustomDropdownProps = {
+  data: {label: number; value: string}[];
+  label: string;
 };

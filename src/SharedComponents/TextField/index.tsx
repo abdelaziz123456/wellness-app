@@ -1,18 +1,11 @@
-import {View, Text, TextInput, KeyboardTypeOptions} from 'react-native';
+import {View, Text, TextInput} from 'react-native';
 import React, {useState} from 'react';
 import styles from './styles';
 import {colors} from '@assets/colors';
 import {CustomText} from '..';
 import {LabelErrorIcon, LableSuccessIcon} from '@assets/icons';
+import {InputFieldProps} from '@Utiles/props';
 
-type Props = {
-  leftIcon: JSX.Element;
-  placeHolder?: string;
-  label?: string;
-  errorMessage?: string;
-  state?: 'success' | 'error' | 'disabled';
-  keyboardType?: KeyboardTypeOptions;
-};
 const InputField = ({
   leftIcon,
   placeHolder,
@@ -20,7 +13,7 @@ const InputField = ({
   errorMessage,
   state,
   keyboardType = 'default',
-}: Props) => {
+}: InputFieldProps) => {
   const [focused, setFocused] = useState(false);
 
   const borderColor = {

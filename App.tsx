@@ -1,22 +1,37 @@
 import Stepper from '@Components/Stepper';
 import StepperButton from '@Components/StepperButton';
-import {CustomButton, CustomText, InputField} from '@SharedComponents/index';
+import {
+  CustomButton,
+  CustomDropdown,
+  CustomText,
+  InputField,
+} from '@SharedComponents/index';
 
 import store from '@Store/store';
 import {btnTextColor, colors} from '@assets/colors';
 import {ArrowRightLong, UserLogin} from '@assets/icons';
 import React, {useState} from 'react';
-import {SafeAreaView, StatusBar, Text, View} from 'react-native';
+import {SafeAreaView, ScrollView, StatusBar, Text, View} from 'react-native';
 
 import {Provider} from 'react-redux';
-
+const data = [
+  {value: 'Item 1', label: 1},
+  {value: 'Item 2', label: 2},
+  {value: 'Item 3', label: 3},
+  {value: 'Item 4', label: 4},
+  {value: 'Item 5', label: 5},
+  {value: 'Item 6', label: 6},
+  {value: 'Item 7', label: 7},
+  {value: 'Item 8', label: 8},
+];
 const App = (): React.JSX.Element => {
   const [activeStep, setActiveStep] = useState<number>(1);
   return (
     <SafeAreaView style={{flex: 1}}>
       <StatusBar backgroundColor={'white'} barStyle="dark-content" />
       <Provider store={store}>
-        <View style={{padding: 10, backgroundColor: colors.white}}>
+        <ScrollView style={{padding: 10, backgroundColor: colors.white}}>
+          <CustomDropdown data={data} label={'select age'} />
           <InputField
             leftIcon={<UserLogin />}
             placeHolder="Type your name"
@@ -99,7 +114,7 @@ const App = (): React.JSX.Element => {
             />
           </View>
           <Stepper activeStep={activeStep} />
-        </View>
+        </ScrollView>
       </Provider>
     </SafeAreaView>
   );
