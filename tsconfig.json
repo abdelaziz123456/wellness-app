@@ -11,7 +11,9 @@
       "@Screens/*": ["./src/Screens/*"],
       "@Utiles/*": ["./src/Utiles/*"],
       "@Store/*": ["./src/Store/*"],
-      "@assets/*": ["./src/assets/*"]
+      "@assets/*": ["./src/assets/*"],
+      "@Navigators/*": ["./src/Navigators/*"]
+
     }
   }
 }

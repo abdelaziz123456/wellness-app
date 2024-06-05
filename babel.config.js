@@ -12,6 +12,7 @@ module.exports = {
           '@assets': './src/assets',
           '@Store': './src/Store',
           '@Providers': './src/Providers',
+          '@Navigators': './src/Navigators',
         },
       },
     ],

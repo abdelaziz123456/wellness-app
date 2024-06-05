@@ -23,10 +23,11 @@ const Stepper = ({activeStep}: Props) => {
           styles.active,
           useAnimatedStyle(() => ({
             width: withSpring(width.value * activeStep),
+            height: 4,
           })),
           {maxWidth: '96%'},
         ]}></Animated.View>
-      <Text>{caclulated}</Text>
+      <Text></Text>
     </View>
   );
 };

@@ -8,17 +8,17 @@
 
 /* Begin PBXBuildFile section */
 		00E356F31AD99517003FC87E /* wellness_appTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* wellness_appTests.m */; };
-		13711FF27E785F1F072D85DF /* libPods-wellness_app-wellness_appTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6223A14FE21281B5A54C8909 /* libPods-wellness_app-wellness_appTests.a */; };
 		13B07FBC1A68108700A75B9A /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.mm */; };
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
 		1E916C6629B14FFDA1C05158 /* NotoSansArabic-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4301C8D22FAB423FAA48FDB9 /* NotoSansArabic-Regular.ttf */; };
-		205A9F44AB8FC2DFB9779E83 /* libPods-wellness_app.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E2839278AB55A50E6AE334F /* libPods-wellness_app.a */; };
 		2583768488984627BF292144 /* NotoSansArabic-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 04F49B21295B45EDBF197FF0 /* NotoSansArabic-Bold.ttf */; };
+		38E5BC620A2FEC89668D35B2 /* libPods-wellness_app-wellness_appTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EE6F0382BC0FA96F21B45FA0 /* libPods-wellness_app-wellness_appTests.a */; };
 		5AF572FA10E84F7DA9AA21CF /* NotoSansArabic-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B0F77119B0DC4CAD86DE551F /* NotoSansArabic-SemiBold.ttf */; };
 		6188F4AF28FD40A480507822 /* NotoSans-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 47E8178D46B149C9BCED23F5 /* NotoSans-Regular.ttf */; };
 		72A2DD39E28C4C4EA8BEC900 /* NotoSans-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F662B351E91F4292BAE8527E /* NotoSans-Italic.ttf */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
+		8AB31008B7BD4C308EA9303D /* libPods-wellness_app.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C4A858CDBD8457DC7E179E47 /* libPods-wellness_app.a */; };
 		BFB7AA57962442BD91997B4D /* NotoSans-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6B4D1CCD63BD4CC3999B0E33 /* NotoSans-Bold.ttf */; };
 		FEB637977FCC45099E2CF45A /* NotoSans-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 019636D0AD0941DBBF2E7A71 /* NotoSans-SemiBold.ttf */; };
 /* End PBXBuildFile section */
@@ -39,25 +39,25 @@
 		00E356F21AD99517003FC87E /* wellness_appTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = wellness_appTests.m; sourceTree = "<group>"; };
 		019636D0AD0941DBBF2E7A71 /* NotoSans-SemiBold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "NotoSans-SemiBold.ttf"; path = "../assets/fonts/NotoSans-SemiBold.ttf"; sourceTree = "<group>"; };
 		04F49B21295B45EDBF197FF0 /* NotoSansArabic-Bold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "NotoSansArabic-Bold.ttf"; path = "../assets/fonts/NotoSansArabic-Bold.ttf"; sourceTree = "<group>"; };
-		0C1DE0B99FD236A0CB4FC2C2 /* Pods-wellness_app.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-wellness_app.debug.xcconfig"; path = "Target Support Files/Pods-wellness_app/Pods-wellness_app.debug.xcconfig"; sourceTree = "<group>"; };
-		0CCCD62AE7069D75068331B0 /* Pods-wellness_app-wellness_appTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-wellness_app-wellness_appTests.release.xcconfig"; path = "Target Support Files/Pods-wellness_app-wellness_appTests/Pods-wellness_app-wellness_appTests.release.xcconfig"; sourceTree = "<group>"; };
 		13B07F961A680F5B00A75B9A /* wellness_app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = wellness_app.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		13B07FAF1A68108700A75B9A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = wellness_app/AppDelegate.h; sourceTree = "<group>"; };
 		13B07FB01A68108700A75B9A /* AppDelegate.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = AppDelegate.mm; path = wellness_app/AppDelegate.mm; sourceTree = "<group>"; };
 		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = wellness_app/Images.xcassets; sourceTree = "<group>"; };
 		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = wellness_app/Info.plist; sourceTree = "<group>"; };
 		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = wellness_app/main.m; sourceTree = "<group>"; };
-		16A547D0609E8AE7261A7B01 /* Pods-wellness_app.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-wellness_app.release.xcconfig"; path = "Target Support Files/Pods-wellness_app/Pods-wellness_app.release.xcconfig"; sourceTree = "<group>"; };
-		2CFEDFB2400FE2E73F87519F /* Pods-wellness_app-wellness_appTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-wellness_app-wellness_appTests.debug.xcconfig"; path = "Target Support Files/Pods-wellness_app-wellness_appTests/Pods-wellness_app-wellness_appTests.debug.xcconfig"; sourceTree = "<group>"; };
+		2FD4CD6BC9088E699407C918 /* Pods-wellness_app-wellness_appTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-wellness_app-wellness_appTests.release.xcconfig"; path = "Target Support Files/Pods-wellness_app-wellness_appTests/Pods-wellness_app-wellness_appTests.release.xcconfig"; sourceTree = "<group>"; };
 		4301C8D22FAB423FAA48FDB9 /* NotoSansArabic-Regular.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "NotoSansArabic-Regular.ttf"; path = "../assets/fonts/NotoSansArabic-Regular.ttf"; sourceTree = "<group>"; };
 		47E8178D46B149C9BCED23F5 /* NotoSans-Regular.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "NotoSans-Regular.ttf"; path = "../assets/fonts/NotoSans-Regular.ttf"; sourceTree = "<group>"; };
-		4E2839278AB55A50E6AE334F /* libPods-wellness_app.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-wellness_app.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		6223A14FE21281B5A54C8909 /* libPods-wellness_app-wellness_appTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-wellness_app-wellness_appTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6B4D1CCD63BD4CC3999B0E33 /* NotoSans-Bold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "NotoSans-Bold.ttf"; path = "../assets/fonts/NotoSans-Bold.ttf"; sourceTree = "<group>"; };
+		76A1FF5B3A5EA38CB15F6AFB /* Pods-wellness_app.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-wellness_app.release.xcconfig"; path = "Target Support Files/Pods-wellness_app/Pods-wellness_app.release.xcconfig"; sourceTree = "<group>"; };
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = wellness_app/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B0F77119B0DC4CAD86DE551F /* NotoSansArabic-SemiBold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "NotoSansArabic-SemiBold.ttf"; path = "../assets/fonts/NotoSansArabic-SemiBold.ttf"; sourceTree = "<group>"; };
+		BC5750D09AC79E09C510CB61 /* Pods-wellness_app.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-wellness_app.debug.xcconfig"; path = "Target Support Files/Pods-wellness_app/Pods-wellness_app.debug.xcconfig"; sourceTree = "<group>"; };
+		C4A858CDBD8457DC7E179E47 /* libPods-wellness_app.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-wellness_app.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
+		EE6F0382BC0FA96F21B45FA0 /* libPods-wellness_app-wellness_appTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-wellness_app-wellness_appTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F662B351E91F4292BAE8527E /* NotoSans-Italic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "NotoSans-Italic.ttf"; path = "../assets/fonts/NotoSans-Italic.ttf"; sourceTree = "<group>"; };
+		FD99602855B13792A6135438 /* Pods-wellness_app-wellness_appTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-wellness_app-wellness_appTests.debug.xcconfig"; path = "Target Support Files/Pods-wellness_app-wellness_appTests/Pods-wellness_app-wellness_appTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,7 +65,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				13711FF27E785F1F072D85DF /* libPods-wellness_app-wellness_appTests.a in Frameworks */,
+				38E5BC620A2FEC89668D35B2 /* libPods-wellness_app-wellness_appTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -73,7 +73,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				205A9F44AB8FC2DFB9779E83 /* libPods-wellness_app.a in Frameworks */,
+				8AB31008B7BD4C308EA9303D /* libPods-wellness_app.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -114,8 +114,8 @@
 			isa = PBXGroup;
 			children = (
 				ED297162215061F000B7C4FE /* JavaScriptCore.framework */,
-				4E2839278AB55A50E6AE334F /* libPods-wellness_app.a */,
-				6223A14FE21281B5A54C8909 /* libPods-wellness_app-wellness_appTests.a */,
+				C4A858CDBD8457DC7E179E47 /* libPods-wellness_app.a */,
+				EE6F0382BC0FA96F21B45FA0 /* libPods-wellness_app-wellness_appTests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -155,10 +155,10 @@
 		BBD78D7AC51CEA395F1C20DB /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				0C1DE0B99FD236A0CB4FC2C2 /* Pods-wellness_app.debug.xcconfig */,
-				16A547D0609E8AE7261A7B01 /* Pods-wellness_app.release.xcconfig */,
-				2CFEDFB2400FE2E73F87519F /* Pods-wellness_app-wellness_appTests.debug.xcconfig */,
-				0CCCD62AE7069D75068331B0 /* Pods-wellness_app-wellness_appTests.release.xcconfig */,
+				BC5750D09AC79E09C510CB61 /* Pods-wellness_app.debug.xcconfig */,
+				76A1FF5B3A5EA38CB15F6AFB /* Pods-wellness_app.release.xcconfig */,
+				FD99602855B13792A6135438 /* Pods-wellness_app-wellness_appTests.debug.xcconfig */,
+				2FD4CD6BC9088E699407C918 /* Pods-wellness_app-wellness_appTests.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -185,12 +185,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "wellness_appTests" */;
 			buildPhases = (
-				570E70D09BFA1FB2B80C0ED7 /* [CP] Check Pods Manifest.lock */,
+				EE69897338F207623CBA3FFA /* [CP] Check Pods Manifest.lock */,
 				00E356EA1AD99517003FC87E /* Sources */,
 				00E356EB1AD99517003FC87E /* Frameworks */,
 				00E356EC1AD99517003FC87E /* Resources */,
-				DF2637FE2495CBB7FC47F665 /* [CP] Embed Pods Frameworks */,
-				681A7B3EF9E20BDD812032A3 /* [CP] Copy Pods Resources */,
+				FC900B4D362F21B1534F7E3B /* [CP] Embed Pods Frameworks */,
+				06B93231C6C9C250628B7727 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -206,13 +206,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "wellness_app" */;
 			buildPhases = (
-				04128CC4E125D7B95E8DB616 /* [CP] Check Pods Manifest.lock */,
+				9BFD91DDDEBF31EE97074E8C /* [CP] Check Pods Manifest.lock */,
 				13B07F871A680F5B00A75B9A /* Sources */,
 				13B07F8C1A680F5B00A75B9A /* Frameworks */,
 				13B07F8E1A680F5B00A75B9A /* Resources */,
 				00DD1BFF1BD5951E006B06BC /* Bundle React Native code and images */,
-				40CD66727DB9AE33C539AA48 /* [CP] Embed Pods Frameworks */,
-				A91DC6A790C6C598A02699F3 /* [CP] Copy Pods Resources */,
+				7515A54C4677009EB23C4EE8 /* [CP] Embed Pods Frameworks */,
+				CC988C804B20B0A1D88DF620 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -302,7 +302,41 @@
 			shellPath = /bin/sh;
 			shellScript = "set -e\n\nWITH_ENVIRONMENT=\"../node_modules/react-native/scripts/xcode/with-environment.sh\"\nREACT_NATIVE_XCODE=\"../node_modules/react-native/scripts/react-native-xcode.sh\"\n\n/bin/sh -c \"$WITH_ENVIRONMENT $REACT_NATIVE_XCODE\"\n";
 		};
-		04128CC4E125D7B95E8DB616 /* [CP] Check Pods Manifest.lock */ = {
+		06B93231C6C9C250628B7727 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-wellness_app-wellness_appTests/Pods-wellness_app-wellness_appTests-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-wellness_app-wellness_appTests/Pods-wellness_app-wellness_appTests-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-wellness_app-wellness_appTests/Pods-wellness_app-wellness_appTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7515A54C4677009EB23C4EE8 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-wellness_app/Pods-wellness_app-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-wellness_app/Pods-wellness_app-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-wellness_app/Pods-wellness_app-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9BFD91DDDEBF31EE97074E8C /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -324,24 +358,24 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		40CD66727DB9AE33C539AA48 /* [CP] Embed Pods Frameworks */ = {
+		CC988C804B20B0A1D88DF620 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-wellness_app/Pods-wellness_app-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-wellness_app/Pods-wellness_app-resources-${CONFIGURATION}-input-files.xcfilelist",
 			);
-			name = "[CP] Embed Pods Frameworks";
+			name = "[CP] Copy Pods Resources";
 			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-wellness_app/Pods-wellness_app-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-wellness_app/Pods-wellness_app-resources-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-wellness_app/Pods-wellness_app-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-wellness_app/Pods-wellness_app-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		570E70D09BFA1FB2B80C0ED7 /* [CP] Check Pods Manifest.lock */ = {
+		EE69897338F207623CBA3FFA /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -363,41 +397,7 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		681A7B3EF9E20BDD812032A3 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-wellness_app-wellness_appTests/Pods-wellness_app-wellness_appTests-resources-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Copy Pods Resources";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-wellness_app-wellness_appTests/Pods-wellness_app-wellness_appTests-resources-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-wellness_app-wellness_appTests/Pods-wellness_app-wellness_appTests-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		A91DC6A790C6C598A02699F3 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-wellness_app/Pods-wellness_app-resources-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Copy Pods Resources";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-wellness_app/Pods-wellness_app-resources-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-wellness_app/Pods-wellness_app-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		DF2637FE2495CBB7FC47F665 /* [CP] Embed Pods Frameworks */ = {
+		FC900B4D362F21B1534F7E3B /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -447,7 +447,7 @@
 /* Begin XCBuildConfiguration section */
 		00E356F61AD99517003FC87E /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2CFEDFB2400FE2E73F87519F /* Pods-wellness_app-wellness_appTests.debug.xcconfig */;
+			baseConfigurationReference = FD99602855B13792A6135438 /* Pods-wellness_app-wellness_appTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				GCC_PREPROCESSOR_DEFINITIONS = (
@@ -474,7 +474,7 @@
 		};
 		00E356F71AD99517003FC87E /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0CCCD62AE7069D75068331B0 /* Pods-wellness_app-wellness_appTests.release.xcconfig */;
+			baseConfigurationReference = 2FD4CD6BC9088E699407C918 /* Pods-wellness_app-wellness_appTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				COPY_PHASE_STRIP = NO;
@@ -498,7 +498,7 @@
 		};
 		13B07F941A680F5B00A75B9A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0C1DE0B99FD236A0CB4FC2C2 /* Pods-wellness_app.debug.xcconfig */;
+			baseConfigurationReference = BC5750D09AC79E09C510CB61 /* Pods-wellness_app.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -525,7 +525,7 @@
 		};
 		13B07F951A680F5B00A75B9A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 16A547D0609E8AE7261A7B01 /* Pods-wellness_app.release.xcconfig */;
+			baseConfigurationReference = 76A1FF5B3A5EA38CB15F6AFB /* Pods-wellness_app.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
