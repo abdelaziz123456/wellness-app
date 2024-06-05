@@ -20,7 +20,8 @@ const CustomButton = ({text, onPress, type, size, Icon}: ButtonProps) => {
   ) : (
     <TouchableOpacity
       onPress={onPress}
-      style={{...styles(type).smallContainer}}>
+      style={{...styles(type).smallContainer}}
+      disabled={type.includes('Inactive')}>
       <CustomText text={text} type={'btn2'} color={btnTextColor[type]} />
     </TouchableOpacity>
   );
