@@ -10,3 +10,7 @@ export {default as ProgressIcon} from './Progress';
 export {default as ProgressActive} from './ProgressActive';
 export {default as SettingIcon} from './Setting';
 export {default as SettingActive} from './SettingActive';
+export {default as MainLogo} from './MainLogo';
+export {default as OnboardingOne} from './OnboardingOne';
+export {default as OnboardingTwo} from './OnboardingTwo';
+export {default as OnboardingThree} from './OnboardingThree';

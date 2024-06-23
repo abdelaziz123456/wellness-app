@@ -93,7 +93,12 @@ const Home = () => {
         type="secondaryInactive"
       />
 
-      <View style={{justifyContent: 'center', alignItems: 'center'}}>
+      <View
+        style={{
+          justifyContent: 'center',
+          alignItems: 'center',
+          paddingBottom: 40,
+        }}>
         <StepperButton
           onPress={() => {
             if (activeStep < 3) {
@@ -102,7 +107,7 @@ const Home = () => {
           }}
         />
       </View>
-      <Stepper activeStep={activeStep} />
+      <Stepper activeStep={activeStep} stepperWidth={200} />
     </ScrollView>
   );
 };

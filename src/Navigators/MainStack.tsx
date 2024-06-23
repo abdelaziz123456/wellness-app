@@ -17,9 +17,10 @@ import {
 } from '@assets/icons';
 import {colors} from '@assets/colors';
 import Progress from '@Screens/Progress';
+import {MainStackParamList} from '@Utiles/props';
 
 const MainStack = () => {
-  const Tab = createBottomTabNavigator();
+  const Tab = createBottomTabNavigator<MainStackParamList>();
   const insets = useSafeAreaInsets();
   const ActiveIcons: {
     [key: string]: React.ReactNode;

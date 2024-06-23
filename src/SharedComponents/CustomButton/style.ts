@@ -30,7 +30,7 @@ export const styles = (type: ButtonTypes) =>
     smallContainer: {
       backgroundColor: btnBg[type],
       borderRadius: spacing.xl,
-      paddingVertical: spacing.l,
+      paddingVertical: spacing.s,
       paddingHorizontal: spacing.l,
       flexDirection: 'row',
       justifyContent: 'center',

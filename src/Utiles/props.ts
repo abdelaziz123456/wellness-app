@@ -1,4 +1,10 @@
-import {KeyboardTypeOptions} from 'react-native';
+import {StackNavigationProp} from '@react-navigation/stack';
+import {
+  KeyboardTypeOptions,
+  StyleProp,
+  TextStyle,
+  ViewStyle,
+} from 'react-native';
 
 export type textTypes =
   | 'head1'
@@ -24,6 +30,7 @@ export type TextProps = {
   text: string;
   type: textTypes;
   color?: string;
+  style?: StyleProp<TextStyle>;
 };
 
 export type ButtonProps = {
@@ -32,6 +39,7 @@ export type ButtonProps = {
   type: ButtonTypes;
   size: 'regular' | 'small';
   Icon?: React.ReactElement;
+  customStyle?: StyleProp<ViewStyle>;
 };
 
 export type InputFieldProps = {
@@ -47,3 +55,20 @@ export type CustomDropdownProps = {
   data: {label: number; value: string}[];
   label: string;
 };
+
+export type MainStackParamList = {
+  Settings: undefined;
+  Activities: undefined;
+  Progress: undefined;
+  Home: undefined;
+};
+
+export type MainStackNavigationProp = StackNavigationProp<MainStackParamList>;
+
+export type WelcomeStackParamList = {
+  onboarding: undefined;
+  welcome: undefined;
+};
+
+export type WelcomeStackNavigationProp =
+  StackNavigationProp<WelcomeStackParamList>;

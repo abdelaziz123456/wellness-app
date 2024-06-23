@@ -1,4 +1,4 @@
-import {Dimensions, Pressable, Text, View} from 'react-native';
+import {Dimensions, View} from 'react-native';
 import React from 'react';
 import styles from './styles';
 import Animated, {
@@ -9,25 +9,21 @@ import Animated, {
 
 type Props = {
   activeStep: number;
+  stepperWidth: number;
 };
-const Stepper = ({activeStep}: Props) => {
-  const screenWidth = Dimensions.get('screen').width;
-  const width = useSharedValue(screenWidth / 3);
-
-  const caclulated = Number(width.value.toFixed(0)) * activeStep;
+const Stepper = ({activeStep, stepperWidth}: Props) => {
+  const width = useSharedValue(stepperWidth / 3);
 
   return (
-    <View style={styles.container}>
+    <View style={styles(stepperWidth).container}>
       <Animated.View
         style={[
-          styles.active,
+          styles(stepperWidth).active,
           useAnimatedStyle(() => ({
             width: withSpring(width.value * activeStep),
             height: 4,
           })),
-          {maxWidth: '96%'},
         ]}></Animated.View>
-      <Text></Text>
     </View>
   );
 };

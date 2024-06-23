@@ -5,14 +5,22 @@ import {ButtonProps} from '@Utiles/props';
 import {styles} from './style';
 import {btnTextColor} from '@assets/colors';
 
-const CustomButton = ({text, onPress, type, size, Icon}: ButtonProps) => {
+const CustomButton = ({
+  text,
+  onPress,
+  type,
+  size,
+  Icon,
+  customStyle,
+}: ButtonProps) => {
   return size === 'regular' ? (
     <TouchableOpacity
       onPress={onPress}
-      style={{
-        ...styles(type).container,
-        ...(type == 'primary' ? styles(type).withShadow : {}),
-      }}>
+      style={[
+        styles(type).container,
+        type == 'primary' ? styles(type).withShadow : {},
+        customStyle,
+      ]}>
       <View></View>
       <CustomText text={text} type={'btn1'} color={btnTextColor[type]} />
       <View>{Icon || <></>}</View>
@@ -20,7 +28,7 @@ const CustomButton = ({text, onPress, type, size, Icon}: ButtonProps) => {
   ) : (
     <TouchableOpacity
       onPress={onPress}
-      style={{...styles(type).smallContainer}}
+      style={[styles(type).smallContainer, customStyle]}
       disabled={type.includes('Inactive')}>
       <CustomText text={text} type={'btn2'} color={btnTextColor[type]} />
     </TouchableOpacity>

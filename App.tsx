@@ -1,4 +1,5 @@
 import MainStack from '@Navigators/MainStack';
+import WelcomeStack from '@Navigators/WelcomeStack';
 import store from '@Store/store';
 import {NavigationContainer} from '@react-navigation/native';
 import React from 'react';
@@ -11,9 +12,10 @@ const App = (): React.JSX.Element => {
   return (
     <NavigationContainer>
       <SafeAreaProvider>
-        <StatusBar backgroundColor={'white'} barStyle="dark-content" />
+        <StatusBar hidden />
         <Provider store={store}>
-          <MainStack />
+          {/* <MainStack /> */}
+          <WelcomeStack />
         </Provider>
       </SafeAreaProvider>
     </NavigationContainer>
