@@ -13,6 +13,10 @@ const InputField = ({
   errorMessage,
   state,
   keyboardType = 'default',
+  style,
+  value,
+  setValue,
+  hidePass = false,
 }: InputFieldProps) => {
   const [focused, setFocused] = useState(false);
 
@@ -28,7 +32,7 @@ const InputField = ({
   };
 
   return (
-    <View style={styles.mainWrapper}>
+    <View style={[styles.mainWrapper, style]}>
       <Text>{label}</Text>
       <View
         style={[
@@ -40,9 +44,12 @@ const InputField = ({
         <TextInput
           keyboardType={keyboardType}
           editable={state !== 'disabled'}
-          style={{flex: 1}}
+          style={{flex: 1, marginLeft: 5}}
           placeholder={placeHolder}
+          secureTextEntry={hidePass}
           placeholderTextColor={colors.darkGrey}
+          value={value}
+          onChangeText={setValue}
           onFocus={() => {
             setFocused(true);
           }}

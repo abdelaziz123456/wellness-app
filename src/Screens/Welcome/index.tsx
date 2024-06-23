@@ -22,6 +22,7 @@ const Welcome = () => {
           text={`Welcome to \nOneLook`}
           style={styles.centerText}
           color={colors.deepBlue}
+          centered
         />
         <CustomText
           type="body1"

@@ -31,6 +31,7 @@ export type TextProps = {
   type: textTypes;
   color?: string;
   style?: StyleProp<TextStyle>;
+  centered?: boolean;
 };
 
 export type ButtonProps = {
@@ -49,6 +50,10 @@ export type InputFieldProps = {
   errorMessage?: string;
   state?: 'success' | 'error' | 'disabled';
   keyboardType?: KeyboardTypeOptions;
+  style?: StyleProp<ViewStyle>;
+  value?: string;
+  setValue: React.Dispatch<React.SetStateAction<string | undefined>>;
+  hidePass?: boolean;
 };
 
 export type CustomDropdownProps = {
@@ -68,6 +73,9 @@ export type MainStackNavigationProp = StackNavigationProp<MainStackParamList>;
 export type WelcomeStackParamList = {
   onboarding: undefined;
   welcome: undefined;
+  login: undefined;
+  signup: undefined;
+  forgetPass: undefined;
 };
 
 export type WelcomeStackNavigationProp =

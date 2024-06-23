@@ -8,6 +8,8 @@ import {spacing} from '@assets/spacing';
 import CustomText from '@SharedComponents/CustomText';
 import StepperButton from '@Components/StepperButton';
 import Stepper from '@Components/Stepper';
+import {useNavigation} from '@react-navigation/native';
+import {WelcomeStackNavigationProp} from '@Utiles/props';
 
 const Onboarding = () => {
   const insets = useSafeAreaInsets();
@@ -19,6 +21,8 @@ const Onboarding = () => {
     2: <OnboardingTwo />,
     3: <OnboardingThree />,
   };
+
+  const navigation = useNavigation<WelcomeStackNavigationProp>();
   return (
     <View
       style={{
@@ -30,31 +34,38 @@ const Onboarding = () => {
           size="small"
           text="Skip intro"
           type="secondary"
-          onPress={() => {}}
+          onPress={() => {
+            navigation.navigate('signup');
+          }}
           customStyle={styles.btnStyle}
         />
-      </View>
-
-      <View>
         <View style={styles.iconContainer}>{matchedIcon[activeStep]}</View>
         <CustomText
           text={`Keep calm and stay \nin control`}
           type="head1"
-          style={{textAlign: 'center'}}
+          centered
         />
         <CustomText
           text={`You can check your health with just one \nlook.`}
           type="body1"
-          style={{textAlign: 'center', marginTop: 20}}
+          centered
+          style={{marginTop: 20}}
         />
       </View>
 
       <View style={{alignItems: 'center'}}>
-        <View style={{justifyContent: 'center', alignItems: 'center'}}>
+        <View
+          style={{
+            justifyContent: 'center',
+            alignItems: 'center',
+            paddingBottom: 40,
+          }}>
           <StepperButton
             onPress={() => {
               if (activeStep < 3) {
                 setActiveStep(activeStep + 1);
+              } else {
+                navigation.navigate('signup');
               }
             }}
           />

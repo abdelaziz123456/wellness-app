@@ -14,3 +14,8 @@ export {default as MainLogo} from './MainLogo';
 export {default as OnboardingOne} from './OnboardingOne';
 export {default as OnboardingTwo} from './OnboardingTwo';
 export {default as OnboardingThree} from './OnboardingThree';
+export {default as Email} from './email';
+export {default as HidePassword} from './HidePassword';
+export {default as Locked} from './locked';
+export {default as ShowPassword} from './showPassword';
+export {default as ErrorSign} from './ErrorSign';

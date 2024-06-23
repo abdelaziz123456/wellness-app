@@ -5,6 +5,7 @@ import {TransitionPresets, createStackNavigator} from '@react-navigation/stack';
 import Welcome from '@Screens/Welcome';
 import Onboarding from '@Screens/Onboarding';
 import {WelcomeStackParamList} from '@Utiles/props';
+import Signup from '@Screens/Signup';
 
 const WelcomeStack = () => {
   const Stack = createStackNavigator<WelcomeStackParamList>();
@@ -20,6 +21,7 @@ const WelcomeStack = () => {
         }}>
         <Stack.Screen name="welcome" component={Welcome} />
         <Stack.Screen name="onboarding" component={Onboarding} />
+        <Stack.Screen name="signup" component={Signup} />
       </Stack.Navigator>
     </View>
   );

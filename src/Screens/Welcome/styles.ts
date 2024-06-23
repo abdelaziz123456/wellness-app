@@ -17,7 +17,6 @@ export default StyleSheet.create({
   },
 
   centerText: {
-    textAlign: 'center',
     marginTop: spacing.xl,
     marginBottom: 26,
   },
