@@ -14,7 +14,8 @@ export default StyleSheet.create({
   },
   btnStyle: {backgroundColor: colors.violetLight, width: 100},
   btnContainer: {
-    alignItems: 'flex-end',
+    alignItems: 'center',
+    justifyContent: 'center',
   },
   iconContainer: {
     marginVertical: spacing.xxl,

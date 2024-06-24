@@ -1,13 +1,22 @@
-import {View, Platform} from 'react-native';
+import {View, Platform, Pressable} from 'react-native';
 import React, {useState} from 'react';
 import {spacing} from '@assets/spacing';
 import {useSafeAreaInsets} from 'react-native-safe-area-context';
 import CustomText from '@SharedComponents/CustomText';
-import {InputField} from '@SharedComponents/index';
+import {CustomButton, InputField} from '@SharedComponents/index';
 import {colors} from '@assets/colors';
 import styles from './styles';
-import {Email, ErrorSign, Locked, UserLogin} from '@assets/icons';
+import {
+  ArrowRightLong,
+  Email,
+  ErrorSign,
+  FacebookIcon,
+  GoogleIcon,
+  Locked,
+  UserLogin,
+} from '@assets/icons';
 import {containsSymbol, hasUpperAndLower} from '@Utiles/utiles';
+import Terms from '@Components/Terms';
 
 const Signup = () => {
   const insets = useSafeAreaInsets();
@@ -66,6 +75,50 @@ const Signup = () => {
           ErrorMessage('Both uppercase and lowercase characters')}
         {containsSymbol(pass ? pass : '') ||
           ErrorMessage('At least one number or symbol')}
+      </View>
+      <View style={styles.termsContainer}>
+        <Terms
+          checked={checked}
+          setChecked={setChecked}
+          text={`By continuing you accept our Privacy Policy and \nTerm of Use`}
+        />
+      </View>
+
+      <CustomButton
+        type={'primary'}
+        text="Sign Up"
+        onPress={() => {}}
+        size="regular"
+        Icon={<ArrowRightLong stroke={colors.white} />}
+      />
+
+      <View style={styles.deviderContainer}>
+        <View style={styles.deviderRule}></View>
+        <CustomText text="Or" color={colors.deepBlue} type="body3" />
+        <View style={styles.deviderRule}></View>
+      </View>
+
+      <View style={styles.iconsContainer}>
+        <View style={styles.icon}>
+          <GoogleIcon />
+        </View>
+        <View style={styles.icon}>
+          <FacebookIcon />
+        </View>
+      </View>
+
+      <View style={{flexDirection: 'row', justifyContent: 'center'}}>
+        <CustomText
+          text="Already have an account ? "
+          color={colors.deepBlue}
+          type="body3"
+        />
+        <Pressable
+          onPress={() => {
+            console.log('pressed');
+          }}>
+          <CustomText text="Login" color={colors.purplePlum} type="body3" />
+        </Pressable>
       </View>
     </View>
   );

@@ -19,3 +19,6 @@ export {default as HidePassword} from './HidePassword';
 export {default as Locked} from './locked';
 export {default as ShowPassword} from './showPassword';
 export {default as ErrorSign} from './ErrorSign';
+export {default as Checked} from './checked';
+export {default as FacebookIcon} from './fb';
+export {default as GoogleIcon} from './googleIcon';

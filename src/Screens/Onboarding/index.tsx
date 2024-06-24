@@ -15,11 +15,23 @@ const Onboarding = () => {
   const insets = useSafeAreaInsets();
   const [activeStep, setActiveStep] = useState<number>(1);
   const matchedIcon: {
-    [key: number]: React.ReactNode;
+    [key: number]: {svg: React.ReactNode; title: string; subTitle: string};
   } = {
-    1: <OnboardingOne />,
-    2: <OnboardingTwo />,
-    3: <OnboardingThree />,
+    1: {
+      svg: <OnboardingOne />,
+      title: 'Keep calm and stay in control',
+      subTitle: 'You can check your health with just one look.',
+    },
+    2: {
+      svg: <OnboardingTwo />,
+      title: 'Don’t miss a single \npill, ever!',
+      subTitle: 'Plan your supplementation in details.',
+    },
+    3: {
+      svg: <OnboardingThree />,
+      title: `Exercise more \n& breathe better`,
+      subTitle: 'Learn, measure, set daily goals.',
+    },
   };
 
   const navigation = useNavigation<WelcomeStackNavigationProp>();
@@ -30,30 +42,37 @@ const Onboarding = () => {
         paddingTop: Platform.OS == 'ios' ? insets.top : spacing.xl,
       }}>
       <View style={styles.btnContainer}>
-        <CustomButton
-          size="small"
-          text="Skip intro"
-          type="secondary"
-          onPress={() => {
-            navigation.navigate('signup');
-          }}
-          customStyle={styles.btnStyle}
-        />
-        <View style={styles.iconContainer}>{matchedIcon[activeStep]}</View>
+        <View
+          style={{
+            alignItems: 'flex-end',
+            width: '100%',
+          }}>
+          <CustomButton
+            size="small"
+            text="Skip intro"
+            type="secondary"
+            onPress={() => {
+              navigation.navigate('signup');
+            }}
+            customStyle={styles.btnStyle}
+          />
+        </View>
+
+        <View style={styles.iconContainer}>{matchedIcon[activeStep].svg}</View>
         <CustomText
-          text={`Keep calm and stay \nin control`}
+          text={matchedIcon[activeStep].title}
           type="head1"
           centered
         />
         <CustomText
-          text={`You can check your health with just one \nlook.`}
+          text={matchedIcon[activeStep].subTitle}
           type="body1"
           centered
           style={{marginTop: 20}}
         />
       </View>
 
-      <View style={{alignItems: 'center'}}>
+      <View style={{alignItems: 'center', justifyContent: 'center'}}>
         <View
           style={{
             justifyContent: 'center',

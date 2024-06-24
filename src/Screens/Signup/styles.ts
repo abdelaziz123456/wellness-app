@@ -17,4 +17,22 @@ export default StyleSheet.create({
   inputField: {
     marginBottom: 12,
   },
+  termsContainer: {
+    marginVertical: 20,
+  },
+  deviderContainer: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    marginBottom: 20,
+  },
+  deviderRule: {flex: 1, borderTopWidth: 1, borderTopColor: colors.lightGray},
+
+  iconsContainer: {
+    flexDirection: 'row',
+    justifyContent: 'center',
+    marginBottom: 20,
+  },
+  icon: {
+    marginHorizontal: 16,
+  },
 });
