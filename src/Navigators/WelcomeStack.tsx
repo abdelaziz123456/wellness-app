@@ -6,6 +6,8 @@ import Welcome from '@Screens/Welcome';
 import Onboarding from '@Screens/Onboarding';
 import {WelcomeStackParamList} from '@Utiles/props';
 import Signup from '@Screens/Signup';
+import Login from '@Screens/Login';
+import {EnterEmail, NewPass, SuccessChange} from '@Screens/ChangePass';
 
 const WelcomeStack = () => {
   const Stack = createStackNavigator<WelcomeStackParamList>();
@@ -22,6 +24,10 @@ const WelcomeStack = () => {
         <Stack.Screen name="welcome" component={Welcome} />
         <Stack.Screen name="onboarding" component={Onboarding} />
         <Stack.Screen name="signup" component={Signup} />
+        <Stack.Screen name="Login" component={Login} />
+        <Stack.Screen name="EnterEmail" component={EnterEmail} />
+        <Stack.Screen name="ChangePass" component={NewPass} />
+        <Stack.Screen name="SuccessChange" component={SuccessChange} />
       </Stack.Navigator>
     </View>
   );

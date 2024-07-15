@@ -53,7 +53,8 @@ export type InputFieldProps = {
   style?: StyleProp<ViewStyle>;
   value?: string;
   setValue: React.Dispatch<React.SetStateAction<string | undefined>>;
-  hidePass?: boolean;
+
+  pass?: boolean;
 };
 
 export type CustomDropdownProps = {
@@ -75,7 +76,10 @@ export type WelcomeStackParamList = {
   welcome: undefined;
   login: undefined;
   signup: undefined;
-  forgetPass: undefined;
+  ChangePass: undefined;
+  Login: undefined;
+  EnterEmail: undefined;
+  SuccessChange: undefined;
 };
 
 export type WelcomeStackNavigationProp =

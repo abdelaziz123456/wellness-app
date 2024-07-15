@@ -17,6 +17,22 @@ import {
 } from '@assets/icons';
 import {containsSymbol, hasUpperAndLower} from '@Utiles/utiles';
 import Terms from '@Components/Terms';
+import {useNavigation} from '@react-navigation/native';
+import {WelcomeStackNavigationProp} from '@Utiles/props';
+
+export const ErrorMessage = (message: string) => {
+  return (
+    <View style={{flexDirection: 'row', marginBottom: 8}}>
+      <ErrorSign />
+      <CustomText
+        type="body3"
+        text={message}
+        color={colors.darkGrey}
+        style={{marginLeft: spacing.s}}
+      />
+    </View>
+  );
+};
 
 const Signup = () => {
   const insets = useSafeAreaInsets();
@@ -24,19 +40,7 @@ const Signup = () => {
   const [email, setEmail] = useState<string | undefined>('');
   const [pass, setPass] = useState<string | undefined>('');
   const [checked, setChecked] = useState<boolean>(false);
-  const ErrorMessage = (message: string) => {
-    return (
-      <View style={{flexDirection: 'row', marginBottom: 8}}>
-        <ErrorSign />
-        <CustomText
-          type="body3"
-          text={message}
-          color={colors.darkGrey}
-          style={{marginLeft: spacing.s}}
-        />
-      </View>
-    );
-  };
+  const navigation = useNavigation<WelcomeStackNavigationProp>();
 
   return (
     <View
@@ -69,6 +73,7 @@ const Signup = () => {
           leftIcon={<Locked />}
           value={pass}
           setValue={setPass}
+          pass
         />
         {(pass && pass?.length > 8) || ErrorMessage('At least 8 characters')}
         {hasUpperAndLower(pass ? pass : '') ||
@@ -115,7 +120,7 @@ const Signup = () => {
         />
         <Pressable
           onPress={() => {
-            console.log('pressed');
+            navigation.navigate('Login');
           }}>
           <CustomText text="Login" color={colors.purplePlum} type="body3" />
         </Pressable>

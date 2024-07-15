@@ -1,9 +1,14 @@
-import {View, Text, TextInput} from 'react-native';
+import {View, Text, TextInput, Pressable} from 'react-native';
 import React, {useState} from 'react';
 import styles from './styles';
 import {colors} from '@assets/colors';
 import {CustomText} from '..';
-import {LabelErrorIcon, LableSuccessIcon} from '@assets/icons';
+import {
+  HidePassword,
+  LabelErrorIcon,
+  LableSuccessIcon,
+  ShowPassword,
+} from '@assets/icons';
 import {InputFieldProps} from '@Utiles/props';
 
 const InputField = ({
@@ -16,9 +21,11 @@ const InputField = ({
   style,
   value,
   setValue,
-  hidePass = false,
+  pass,
 }: InputFieldProps) => {
   const [focused, setFocused] = useState(false);
+
+  const [hidePass, setHidePass] = useState(false);
 
   const borderColor = {
     success: {borderColor: colors.turquoise},
@@ -57,6 +64,14 @@ const InputField = ({
             setFocused(false);
           }}
         />
+        {pass && (
+          <Pressable
+            onPress={() => {
+              setHidePass(!hidePass);
+            }}>
+            {hidePass ? <ShowPassword /> : <HidePassword />}
+          </Pressable>
+        )}
         {(state == 'error' || state == 'success') && stateIcon[state]}
       </View>
       {errorMessage && (
